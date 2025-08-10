@@ -1,0 +1,7 @@
+.dashboard {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}

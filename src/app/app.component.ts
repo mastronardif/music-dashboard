@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { MetronomeComponent } from './music-tools/metronome/metronome.component';
+import { TimerComponent } from './music-tools/timer/timer.component';
+import { ChordsComponent } from './music-tools/chords/chords.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [MetronomeComponent, TimerComponent, ChordsComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'music-dashboard';
+  title = 'Music Dashboard';
 }

@@ -1,0 +1,20 @@
+<div class="metro-card">
+  <h3>Metronome</h3>
+  <div class="controls">
+    <label>BPM: <input type="number" [(ngModel)]="bpm" (change)="onBpmChange()" min="20" max="300"></label>
+    <label>Beats/Measure: <input type="number" [(ngModel)]="beatsPerMeasure" (change)="onBeatsChange()" min="1" max="12"></label>
+    <label>Subdivision:
+      <select [(ngModel)]="subdivision" (change)="onSubdivisionChange()">
+        <option [value]="1">1</option>
+        <option [value]="2">2</option>
+        <option [value]="3">3</option>
+        <option [value]="4">4</option>
+      </select>
+    </label>
+    <label>Volume: <input type="range" min="0" max="1" step="0.01" [(ngModel)]="volume" (input)="onVolumeChange()"></label>
+  </div>
+
+  <div class="actions">
+    <button (click)="toggle()">{{ running ? 'Stop' : 'Start' }}</button>
+  </div>
+</div>

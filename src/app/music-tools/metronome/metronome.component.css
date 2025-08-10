@@ -1,0 +1,17 @@
+.metro-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 400px;
+}
+.controls label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.actions {
+  margin-top: 0.75rem;
+}
+button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+}

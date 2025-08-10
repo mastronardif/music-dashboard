@@ -1,0 +1,13 @@
+.timer-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 320px;
+}
+.display {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+.row button {
+  margin-right: 0.5rem;
+}

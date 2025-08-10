@@ -1,0 +1,16 @@
+.chords-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.chord {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 6px;
+  width: 140px;
+  text-align: center;
+}
+.chord-header {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}

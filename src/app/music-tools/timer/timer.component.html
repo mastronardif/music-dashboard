@@ -1,0 +1,18 @@
+<div class="timer-card">
+  <h3>Stopwatch</h3>
+  <div class="display">{{ format(elapsed) }}</div>
+  <div class="row">
+    <button (click)="startStopwatch()">{{ running ? 'Pause' : 'Start' }}</button>
+    <button (click)="resetStopwatch()">Reset</button>
+  </div>
+
+  <hr>
+
+  <h3>Countdown</h3>
+  <label>Seconds: <input type="number" [(ngModel)]="countdownSeconds" min="1"></label>
+  <div class="display">{{ remaining ? remaining + 's' : countdownSeconds + 's' }}</div>
+  <div class="row">
+    <button (click)="startCountdown()">{{ countdownRunning ? 'Stop' : 'Start' }}</button>
+    <button (click)="resetCountdown()">Reset</button>
+  </div>
+</div>
